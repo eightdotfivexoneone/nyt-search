@@ -1,0 +1,35 @@
+body{
+  background: rgb(164, 164, 164);
+  font-family: 'Libre Franklin', sans-serif;
+
+  }
+
+.times{
+  font-family: 'UnifrakturCook', cursive;
+}
+
+.bg {
+  /* opacity: 0.5; */
+  background: linear-gradient(to bottom, rgb(67, 67, 67), black);
+
+}
+
+body {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.display-1 {
+  padding: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+form {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#top-articles {
+  padding: 20px;
+}
