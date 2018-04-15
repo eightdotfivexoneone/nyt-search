@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.typekit.net/nww1jpo.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
   <link rel="stylesheet" href="resources/css/style.css">
@@ -11,10 +13,12 @@
 </head>
 <body class="bg">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-transparent text-white˜∫
+  <!-- <nav class="navbar navbar-expand-md navbar-dark bg-transparent text-white˜∫
   ">
-      <div class="container">
-          <a class="times navbar-brand display-3" href="#">The New York Times: Search</a>
+      <div class="container mb-1000">
+          <a class="navbar-brand display-3" href="http://developer.nytimes.com" target="_blank"><img src="resources/img/poweredby_nytimes_65b.png" alt="NYT" width="65">
+          </a>
+
           <ul class="navbar-nav">
             <!-- Nav item -->
               <li class="nav-item">
@@ -22,35 +26,46 @@
               </li>
           </ul>
       </div>
-  </nav>
-  <div class="container bg-gradient-light text-white">
-    <div class="form-group ">
-        <h1 class="display-2 text-white">Search Parameters</h1>
+  </nav> -->
+  <div class="container bg-gradient-light text-white my-100">
+    <div class=" times form-group ">
+        
+        <div>
+            <a class="navbar-brand display-3" href="http://developer.nytimes.com" target="_blank"><img src="resources/img/poweredby_nytimes_65b.png" alt="NYT" width="65">
+            </a>
+        </div>
+        <HR COLOR="white" WIDTH="100%">
+            <h4 style=" font-size:8vw">Search:</h4>
+            <input type="text" class="form-control" id="Search" aria-describedby="emailHelp" placeholder="Enter Search Term(s)">
 
-      <label for="term">Search Term:</label>
-      <input type="text" class="form-control" id="term" aria-describedby="emailHelp">
+            <HR COLOR="white" WIDTH="100%">
+
+      <!-- <label for="term">Terms:</label> -->
     </div>
     <div class="form-group ">
       <label for="num-records">Number of Records to Retrieve:</label>
-      <input type="text" class="form-control" id="num-records">
+      <input type="text" class="form-control" id="num-records" placeholder="(Optional)">
     </div>
     <div class="form-group">
-        <label for="start-year">Start Year (Optional):</label>
-        <input type="text" class="form-control" id="start-year">
+        <label for="start-year">Start Year:</label>
+        <input type="text" class="form-control" id="start-year" placeholder="YYYYMMDD (Optional)">
     </div>
     <div class="form-group mb-50">
-        <label for="end-year">End Year (Optional):</label>
-        <input type="text" class="form-control" id="end-year">
+        <label for="end-year">End Year:</label>
+        <input type="text" class="form-control" id="end-year" placeholder="YYYYMMDD (Optional)">
     </div>
 
     <button type="submit" class="btn btn-light">Search</button>
-    <button type="submit" class="btn btn-light">Clear Results</button>
-    <h1 class="display-2 text-white">Top Articles</h1>
+    <button type="submit" class="btn btn-light mb-50">Clear Results</button>
+
 
 </form>
-  
+<HR COLOR="white" WIDTH="100%">
+<h4 style=" font-size:8vw">Results:</h4>
+<HR COLOR="white" WIDTH="100%">
+
 <!-- Appended Content -->
-<div id="results"class="results container bg-gradient-light text-white">
+<div id = "results" class="results container bg-gradient-light text-white">
 
 
 </div>

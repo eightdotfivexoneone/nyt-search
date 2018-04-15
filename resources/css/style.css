@@ -1,16 +1,16 @@
 body{
   background: rgb(164, 164, 164);
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "bookmania",serif;
 
   }
 
 .times{
-  font-family: 'UnifrakturCook', cursive;
+  font-family: "bookmania",serif;
 }
 
 .bg {
   /* opacity: 0.5; */
-  background: linear-gradient(to bottom, rgb(67, 67, 67), black);
+  background: linear-gradient(to bottom right, rgb(67, 67, 67), black);
 
 }
 
