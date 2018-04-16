@@ -12,22 +12,8 @@
   <title>The New York Times: Search</title>
 </head>
 <body class="bg">
-  <!-- Navbar -->
-  <!-- <nav class="navbar navbar-expand-md navbar-dark bg-transparent text-white˜∫
-  ">
-      <div class="container mb-1000">
-          <a class="navbar-brand display-3" href="http://developer.nytimes.com" target="_blank"><img src="resources/img/poweredby_nytimes_65b.png" alt="NYT" width="65">
-          </a>
 
-          <ul class="navbar-nav">
-            <!-- Nav item -->
-              <li class="nav-item">
-                  <!-- <a class="nav-link" href="#">Instructions</a> -->
-              </li>
-          </ul>
-      </div>
-  </nav> -->
-  <div class="container bg-gradient-light text-white my-100">
+  <div class="container bg-gradient-light text-white my-200">
     <div class=" times form-group ">
         
         <div>
@@ -36,27 +22,27 @@
         </div>
         <HR COLOR="white" WIDTH="100%">
             <h4 style=" font-size:8vw">Search:</h4>
-            <input type="text" class="form-control" id="Search" aria-describedby="emailHelp" placeholder="Enter Search Term(s)">
+            <input id="search-term"type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Search Term(s)">
 
             <HR COLOR="white" WIDTH="100%">
 
       <!-- <label for="term">Terms:</label> -->
     </div>
     <div class="form-group ">
-      <label for="num-records">Number of Records to Retrieve:</label>
+      <label id="number-records">Number of Records to Retrieve:</label>
       <input type="text" class="form-control" id="num-records" placeholder="(Optional)">
     </div>
     <div class="form-group">
-        <label for="start-year">Start Year:</label>
+        <label item-render-buffer="start-yr">Start Year:</label>
         <input type="text" class="form-control" id="start-year" placeholder="YYYYMMDD (Optional)">
     </div>
     <div class="form-group mb-50">
-        <label for="end-year">End Year:</label>
+        <label id="end-yr">End Year:</label>
         <input type="text" class="form-control" id="end-year" placeholder="YYYYMMDD (Optional)">
     </div>
 
-    <button type="submit" class="btn btn-secondary">Search</button>
-    <button type="submit" class="btn btn-secondary mb-50">Clear Results</button>
+    <button type="submit" class="btn btn-secondary" id="search-button">Search</button>
+    <button type="submit" class="btn btn-secondary mb-50" id="clear-button">Clear Results</button>
 
 
 </form>
@@ -65,7 +51,12 @@
 <HR COLOR="white" WIDTH="100%">
 
 <!-- Appended Content -->
-<div id = "results" class="results container bg-gradient-light text-white">
+<div id = "results-1" class="results container bg-gradient-light text-white"></div>
+<br>
+<span id = "results-2"></span>
+<br>
+<span id = "results-3"></span>
+</div>
 
 
 </div>
